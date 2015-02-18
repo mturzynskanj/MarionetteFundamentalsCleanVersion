@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div id="breadcrumbs">
+
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+
+        <div id="app">
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<script id="index-template" type="text/x-backbone">
+   <h2>Welcome to marionette</h2>
+   <ul>
+     <li>
+       <a href="#" id="nav-users-index">Users</a>
+     </li>
+      <li>
+       <a href="#">Roles</a>
+     </li>
+   </ul>
+
+
+</script>
+
+<script id="user-layout-template" type="text/x-backbone">
+    <h2>Edditing <%=email%></h2>
+    <div id="summary" class="col-md-3 well"></div>
+    <div id="detail" class="col-md-8"></div>
+
+</script>
+
+<script id="summary-template" type="text/x-backbone">
+    <ul>
+     <li>thing1</li>
+     <li>thing2 ></li>
+
+    </ul>
+
+</script>
+
+
+
+<script id="detail-template" type="text/x-backbone">
+ <h2>The Details</h2>
+
+</script>
+
+
+<script id="chart-layout-template" type="text/x-backbone">
+    <div class="row">
+            <div class="col-mid-12" >
+              <div class="col-mid-3" id="leftSelection">left selection</div>
+              <div class="col-mid-9">
+                 <div id="title">THis is title</div>
+                 <div id="topSelection">this is top selelction</div>
+                 <div id="chart">this is chart</div>
+              </div>
+            </div>
+    </div>
+</script>
+
+<script id="top-selection-item-template" type="text/x-backbone">
+    <li >top selection template item</li>
+</script>
+
+<script id="selection-item-template" type="text/x-backbone">
+    <li><label><input type="checkbox" value="<%= stockname%>"><%= stockname%></label></li>
+</script>
+
+
+
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/backbone/underscore.js"></script>
+<script src="vendor/backbone/backbone.js"></script>
+<script src="vendor/backbone/backbone.marionette.js"></script>
+<script src="user-admin/breadcrumb/model.js"></script>
+<script src="user-admin/breadcrumb/views.js"></script>
+<script src="user-admin/breadcrumb/index.js"></script>
+
+
+<script src="user-admin/home/controller.js"></script>
+<script src="user-admin/home/views.js"></script>
+<script src="user-admin/home/router.js"></script>
+<script src="user-admin/home/index.js"></script>
+
+<script src="user-admin/user/model.js"></script>
+<script src="user-admin/user/views.js"></script>
+<script src="user-admin/user/controller.js"></script>
+<script src="user-admin/user/router.js"></script>
+<script src="user-admin/user/index.js"></script>
+
+
+<script src="user-admin/chart/model.js"></script>
+<script src="user-admin/chart/views.js"></script>
+<script src="user-admin/chart/controller.js"></script>
+<script src="user-admin/chart/router.js"></script>
+<script src="user-admin/chart/index.js"></script>
+
+<script src="user-admin/index.js"></script>
+<!--<script src="scripts/apps/MariaMarionetteFundamentals.js" ></script>-->
+<script>
+    UserAdmin.start();
+
+
+</script>
+
+
+</body>
+</html>

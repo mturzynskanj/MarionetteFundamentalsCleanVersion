@@ -1,0 +1,32 @@
+[
+  {
+    "category":"FED",
+    "stockname":"name1"
+
+  },
+  {
+    "category":"NON-FED",
+    "stockname" :"name2"
+  },
+  {
+    "category":"FED",
+    "stockname":"name2"
+  },
+  {
+    "category":"FED",
+    "stockname":"name3"
+  },
+  {
+    "category":"NON-FED",
+    "stockname" :"name3"
+  },
+  {
+    "category":"NON-FED",
+    "stockname" :"name4"
+  },
+  {
+    "category":"NON-FED",
+    "stockname" :"name5"
+  }
+
+]
